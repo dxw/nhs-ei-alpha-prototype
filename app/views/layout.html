@@ -1,6 +1,6 @@
-<!-- 
+<!--
   This is the main layout where you can:
-    - change the header and footer 
+    - change the header and footer
     - add custom CSS and JavaScript
 -->
 
@@ -14,21 +14,45 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  NHS.UK prototype kit
+  NHS England and Improvement
 {% endblock %}
 
 <!-- Header goes inside the header block -->
 <!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
 {% block header %}
-  {{ header({
-    "service": {
-        "name": "Prototype kit",
-        "href": "/"
-      },
-      "showNav": "false",
-      "showSearch": "false"
-    })
-  }}
+{% from 'header/macro.njk' import header %}
+
+{{ header({
+  "organisation": {
+      "name": "England and Improvement"
+    },
+  "showNav": "true",
+  "showSearch": "true",
+  "primaryLinks": [
+    {
+      "url"  : "/",
+      "label" : "Home"
+    },
+    {
+      'url' : '/',
+      'label' : 'Nav 2'
+    },
+    {
+      'url'  : '/',
+      'label' : 'Nav 2'
+    },
+    {
+      'url'  : '/',
+      'label' : 'Nav 4'
+    },
+    {
+      'url' : '/',
+      'label' : 'Nav 6'
+    }
+  ]
+})
+}}
+
 {% endblock %}
 
 <!-- Footer goes inside the footer block -->
