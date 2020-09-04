@@ -1,18 +1,14 @@
-<!-- Use this page as the index for your project -->
-
-<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
-
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'layout.html' %}
-<!--
-  In /views/layout.html you can:
-    - change the header and footer
-    - add custom CSS and JavaScript
--->
 
-<!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  NHS England and Improvement
+  NHS England and Improvement - Home
+{% endblock %}
+
+{% block header %}
+
+{% include "v1/partials-v1/header-v1.html" %}
+
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -27,7 +23,7 @@
 
       <!-- Change the page title here -->
       <h1>
-        NHS England and Improvement
+        Home
       </h1>
 
       <!-- Add your content here -->
@@ -39,19 +35,7 @@
 
       <hr>
 
-      <p>
-        <a href="/v1/home">Version 1</a>
-      </p>
 
-      <p>
-        You'll find the code for this page at <strong>/app/views/index.html</strong>.
-      </p>
-
-      <p>
-        There is also an <a href="/page-example">example page</a>, which contains a selection of NHS.UK frontend styles and components.
-      </p>
-
-      <hr>
 
 
       <!-- End of content -->
