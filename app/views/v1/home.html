@@ -1,5 +1,6 @@
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'layout.html' %}
+{% from 'images/macro.njk' import image %}
 
 {% block pageTitle %}
   NHS England and Improvement - Home
@@ -13,33 +14,138 @@
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
+
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+
 {% block content %}
   <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
+    <div class="nhsuk-grid-column-full">
 
       <!-- Change the page title here -->
       <h1>
-        Home
+        Homepage headline
       </h1>
 
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
 
-      <p class="nhsuk-lede-text">
-        Testing navigation options
+      <p class="nhsuk-body">
+        Featured text content
       </p>
-
-      <hr>
-
-
-
-
-      <!-- End of content -->
 
     </div>
   </div>
+  <div class="nhsuk-grid-row nhsei-featured-section nhsuk-u-padding-bottom-1">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      {{ image({
+        "src": "http://via.placeholder.com/210x120.png?text=Featured+Image",
+        "alt": "Featured photo"
+      }) }}
+
+    </div>
+    <div class="nhsuk-grid-column-one-third"><h2 class="nhsuk-heading-m"><a href="#">Featured promoted section</a></h2></div>
+  </div>
+
+  <div class="nhsuk-grid-row nhsuk-u-padding-bottom-7">
+    <div class="nhsuk-grid-column-one-third">
+      {{ image({
+        "src": "http://via.placeholder.com/250x180.png?text=Featured+Image",
+        "alt": "Featured image"
+      }) }}
+      <h3 class="nhsuk-heading-m"><a href="#">Promoted section</a></h3>
+    </div>
+    <div class="nhsuk-grid-column-one-third">
+      {{ image({
+        "src": "http://via.placeholder.com/250x180.png?text=Featured+Image",
+        "alt": "Featured image"
+      }) }}
+      <h3 class="nhsuk-heading-m"><a href="#">Promoted section</a></h3></div>
+    <div class="nhsuk-grid-column-one-third">
+      {{ image({
+        "src": "http://via.placeholder.com/250x180.png?text=Featured+Image",
+        "alt": "Featured image"
+      }) }}
+      <h3 class="nhsuk-heading-m"><a href="#">Promoted section</a></h3></div>
+  </div>
+
+  <div class="nhsei-full-wrap nhsei-latest-news">
+    <div class="nhsuk-grid-row nhsuk-u-padding-bottom-7 nhsuk-u-padding-top-7 wrapped-section">
+      <div class="nhsuk-grid-column-full"><h2 class="nhsuk-heading-l">Latest news and alerts</h2></div>
+
+      <div class="nhsuk-grid-column-one-quarter">
+        {{ image({
+          "src": "http://via.placeholder.com/400x400.png?text=Featured+Image",
+          "alt": "Featured image"
+        }) }}
+        <h4 class="nhsuk-heading-s">
+        <a href="#">News story</a></h4>
+        <p class="nhsuk-body">This is a brief description telling what to expect</p>
+      </div>
+
+      <div class="nhsuk-grid-column-one-quarter">
+        {{ image({
+          "src": "http://via.placeholder.com/400x400.png?text=Featured+Image",
+          "alt": "Featured image"
+        }) }}
+        <h4 class="nhsuk-heading-s">
+        <a href="#">News story</a></h4>
+        <p class="nhsuk-body">This is a brief description telling what to expect</p>
+      </div>
+
+      <div class="nhsuk-grid-column-one-quarter">
+        {{ image({
+          "src": "http://via.placeholder.com/400x400.png?text=Featured+Image",
+          "alt": "Featured image"
+        }) }}
+        <h4 class="nhsuk-heading-s">
+        <a href="#">News story</a></h4>
+        <p class="nhsuk-body">This is a brief description telling what to expect</p>
+      </div>
+
+      <div class="nhsuk-grid-column-one-quarter">
+        {{ image({
+          "src": "http://via.placeholder.com/400x400.png?text=Featured+Image",
+          "alt": "Featured image"
+        }) }}
+        <h4 class="nhsuk-heading-s">
+        <a href="#">News story</a></h4>
+        <p class="nhsuk-body">This is a brief description telling what to expect</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="nhsuk-grid-row nhsuk-u-padding-top-7">
+    <div class="nhsuk-grid-column-full nhsuk-u-padding-bottom-5">
+      <h2 class="nhsuk-heading-l">Policy and guidance updates</h2>
+    </div>
+    <div class="nhsuk-grid-column-one-half">
+      <ul class="nhsuk-list">
+        <li><h3><a href="#">NHS policy document</a></h3>
+          <p><small>Updated: 01 January 2020</small> <br> <small>Type: policy</small></p>
+        </li>
+        <li><h3><a href="#">NHS policy document</a></h3>
+          <p><small>Updated: 01 January 2020</small> <br> <small>Type: policy</small></p>
+        </li>
+      </ul>
+
+    </div>
+    <div class="nhsuk-grid-column-one-half">
+      <ul class="nhsuk-list">
+        <li><h3><a href="#">NHS policy document</a></h3>
+          <p><small>Updated: 01 January 2020</small> <br> <small>Type: policy</small></p>
+        </li>
+        <li><h3><a href="#">NHS policy document</a></h3>
+          <p><small>Updated: 01 January 2020</small> <br> <small>Type: policy</small></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- End of content -->
 {% endblock %}

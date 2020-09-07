@@ -14,3 +14,28 @@
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
+
+.nhsuk-image {
+  width: 100%;
+}
+
+.nhsei-featured-section {
+  .nhsuk-image {
+    margin-top: 0;
+  }
+}
+
+.nhsei-full-wrap {
+  overflow-x: hidden;
+  margin-left: -1000px;
+  margin-right: -1000px;
+
+   .wrapped-section {
+     padding-left: 1000px;
+     padding-right: 1000px;
+   }
+}
+
+.nhsei-latest-news {
+  background-color: $color_nhsuk-grey-4;
+}
