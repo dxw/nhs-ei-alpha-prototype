@@ -2,9 +2,9 @@
 // CODEPEN: https://codepen.io/vixxofsweden/pen/xxGGYOE
 // needs restyling
 
-$color-accent:                      #177E89;
-$color-light:                       #ffffff;
-$color-dark:                        #2a2a2a;
+$color-accent:                      $color_nhsuk-blue;
+$color-light:                       $color_nhsuk-white;
+$color-dark:                        $color_nhsuk-black;
 $menu-link-padding:                 20px 25px;
 $breakpoint:                        950px;
 $mega-menu-multiLevel-colWidth:     100/3 + 0%;
@@ -14,7 +14,7 @@ $menu-mobile-width:                 350px;
 
 body {
   font-family: 'Noto Sans', sans-serif;
-  background: #fafafa;
+//  background: #fafafa;
   padding: 0;
   margin: 0;
 }
@@ -70,6 +70,9 @@ nav {
       transform: translateY(-50%);
     }
   }
+  &:visited {
+    color: $color-accent;
+  }
 }
 
 .mega-menu-header {
@@ -98,7 +101,7 @@ nav {
     margin-top: 50px;
     background: $color-light;
     > nav {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 0 auto;
     }
   }
@@ -177,6 +180,10 @@ nav {
       &:hover {
         background: tint($color-accent, 85%);
         color: darken($color-accent, 5%);
+      }
+      &:visited {
+        //background: $color-accent;
+        color: $color-accent;
       }
     }
   }
@@ -519,5 +526,12 @@ nav {
   100% {
     opacity: 1;
     transform: scaleX(1);
+  }
+}
+
+.menu-link {
+  small {
+    color: $color-dark;
+
   }
 }
