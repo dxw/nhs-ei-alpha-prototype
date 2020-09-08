@@ -59,3 +59,12 @@
 .nhsuk-breadcrumb {
   border-top: 2px solid  $color_nhsuk-blue;
 }
+
+.nhsie-search-result-item {
+  background-color: $color_nhsuk-white;
+  padding: 1em 1em 0.25em 1em;
+
+  .nhsie-result-meta {
+    padding-right: 0.5em;
+  }
+}
