@@ -50,8 +50,12 @@
     .nhsuk-footer__list-item-link {
       @include nhsuk-link-style-default;
       &:visited {
-        // color: 
+        // color:
       }
     }
   }
+}
+
+.nhsuk-breadcrumb {
+  border-top: 2px solid  $color_nhsuk-blue;
 }
