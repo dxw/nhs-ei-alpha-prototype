@@ -185,6 +185,102 @@ module.exports = {
       description: "Ensuring patients get the right care in the right place.",
       url: "#"
     }
+  ],
+  nhs_people_plan: [
+    {
+      title: "Download: People Plan for 2020/2021",
+      description: "This plan sets out actions to support transformation across the whole NHS.",
+      url: "#"
+    },
+    {
+      title: "Our NHS People Promise",
+      description: "Sets out what our NHS people can expect from their leaders and from each other.",
+      url: "#"
+    },
+    {
+      title: "Support for the People Plan",
+      description: "Support from our partners within health and social care",
+      url: "#"
+    },
+    {
+      title: "People stories",
+      description: "Read stories from across the NHS",
+      url: "#"
+    },
+    {
+      title: "Chief People Officer Bulletin",
+      description: "Receive the latest updates on the aspirations of the NHS People Plan",
+      url: "#"
+    }
+  ],
+  improvement_hub: [
+    {
+      title: "Search the Improvement Hub",
+      description: "Description of section",
+      url: "#"
+    },
+    {
+      title: "About the Improvement Hub",
+      description: "Description of section",
+      url: "#"
+    },
+    {
+      title: "Sustainable Improvement Team",
+      description: "Description of section",
+      url: "#"
+    }
+  ],
+  improvement: [
+    {
+      title: "Patient safety",
+      description: "",
+      url: "#"
+    },
+    {
+      title: "Safeguarding",
+      description: "",
+      url: "#"
+    },
+    {
+      title: "Sustainable improvement",
+      description: "",
+      url: "#"
+    },
+    {
+      title: "Insights platform",
+      description: "",
+      url: "#"
+    },
+    {
+      title: "Always events",
+      description: "",
+      url: "#"
+    },
+    {
+      title: "Evidence based interventions",
+      description: "",
+      url: "#"
+    },
+    {
+      title: "7 day hospital services",
+      description: "",
+      url: "#"
+    },
+    {
+      title: "Winter",
+      description: "",
+      url: "#"
+    },
+    {
+      title: "NHS Accelerated Access Collaborative (AAC)",
+      description: "",
+      url: "#"
+    },
+    {
+      title: "A greener NHS",
+      description: "",
+      url: "#"
+    }
   ]
 
 }
