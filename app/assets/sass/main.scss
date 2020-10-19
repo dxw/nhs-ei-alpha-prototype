@@ -1,5 +1,7 @@
 // Import NHS.UK frontend library
+$nhsuk-page-width: 1200px;
 @import 'node_modules/nhsuk-frontend/packages/nhsuk';
+$nhsuk-page-width: 1200px;
 
 // Components that are not in the NHS.UK frontend library
 @import 'components/panel-confirmation';
