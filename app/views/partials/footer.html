@@ -3,11 +3,10 @@
     <div class="nhsuk-width-container">
       <h2 class="nhsuk-u-visually-hidden">Secondary menu links</h2>
       <ul class="nhsuk-footer__list nhsie-footer-menu">
-        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="#">About us</a></li>
-        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="#">Contact us</a></li>
-        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="#">Transparency and legal</a></li>
-        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="#">Complaints</a></li>
-        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="#">Jobs</a></li>
+        {% for item in data.footerMenu %}
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="{{ item["url"] }}">{{ item["name"] }}</a></li>
+
+        {% endfor %}
       </ul>
 
       <h2 class="nhsuk-u-visually-hidden">Support links</h2>

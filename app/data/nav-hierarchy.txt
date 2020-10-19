@@ -1,4 +1,4 @@
-Home -- dont'r show
+Home -- do not show
 
 
 -Publications

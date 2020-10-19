@@ -18,6 +18,40 @@ Example usage:
 */
 
 module.exports = {
+  footerMenu: [
+    {
+      name: "About us",
+      url: "#"
+    },
+    {
+      name: "Contact us",
+      url: "#"
+    },
+    {
+      name: "Statistics",
+      url: "#"
+    },
+    {
+      name: "Patient involvement",
+      url: "#"
+    },
+    {
+      name: "System guidance and processes",
+      url: "#"
+    },
+    {
+      name: "Jobs",
+      url: "#"
+    },
+    {
+      name: "Transparency and legal",
+      url: "#"
+    },
+    {
+      name: "Complaints",
+      url: "#"
+    }
+  ],
   guidance: [
     {
       title: "Dementia wellbeing in the COVID-19 pandemic",
@@ -74,16 +108,16 @@ module.exports = {
       url: "https://www.england.nhs.uk/2020/09/surge-in-people-checking-their-risk-of-type-2-diabetes/",
       date: "28 September 2020"
     }],
-    news_three: [
-    {
-      title: "NHS announces independent review into gender identity services for children and young people",
-      url: "https://www.england.nhs.uk/2020/09/nhs-announces-independent-review-into-gender-identity-services-for-children-and-young-people/",
-      date: "22 September 2020"
-    },
-    {
-      title: "Nursing boost for England’s NHS",
-      url: "https://www.england.nhs.uk/2020/09/nursing-boost-for-englands-nhs/",
-      date: "21 September 2020"
-    }
-  ]
+  news_three: [
+  {
+    title: "NHS announces independent review into gender identity services for children and young people",
+    url: "https://www.england.nhs.uk/2020/09/nhs-announces-independent-review-into-gender-identity-services-for-children-and-young-people/",
+    date: "22 September 2020"
+  },
+  {
+    title: "Nursing boost for England’s NHS",
+    url: "https://www.england.nhs.uk/2020/09/nursing-boost-for-englands-nhs/",
+    date: "21 September 2020"
+  }],
+
 }
