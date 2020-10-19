@@ -1,0 +1,67 @@
+our_priorities: [
+  {
+    title: "Cancer",
+    description: "Find out what we are doing to improve cancer services in England.",
+    url: "#"
+  },
+  {
+    title: "Coronavirus",
+    description: "View the latest Coronavirus content",
+    url: "#"
+  },
+  {
+    title: "Diabetes",
+    description: "Improve outcomes for those with diabetes.",
+    url: "#"
+  },
+  {
+    title: "End of life care",
+    description: "Details around palliative and end of life care",
+    url: "#"
+  },
+  {
+    title: "Friends and family test",
+    description: "Patient feedback tool of services and experiences",
+    url: "#"
+  },
+  {
+    title: "Genomics",
+    description: "Study of the body’s genes, their functions and their influence on the body",
+    url: "#"
+  },
+  {
+    title: "Health System Support (HSS) framework",
+    description: "Find out more about the HSS framework.",
+    url: "#"
+  },
+  {
+    title: "Learning disabilities",
+    description: "Making health and care services better for people with a learning disability",
+    url: "#"
+  },
+  {
+    title: "Mental health",
+    description: "Working to transform mental health services",
+    url: "#"
+  },
+  {
+    title: "Medicines",
+    description: "",
+    url: "#"
+  },
+  {
+    title: "Rightcare",
+    description: "Diagnosis of data and evidence across that population",
+    url: "#"
+  },
+  {
+    title: "Shared decision making",
+    description: "supporting individuals to make decisions that are right for them",
+    url: "#"
+  },
+  {
+    title: "Urgent and emergency care",
+    description: "Ensuring patients get the right care in the right place.",
+    url: "#"
+  }
+]
