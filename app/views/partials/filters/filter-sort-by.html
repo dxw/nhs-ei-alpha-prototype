@@ -1,0 +1,36 @@
+{% from 'select/macro.njk' import select %}
+
+{{ select({
+  "id": "select-1",
+  "name": "select-1",
+  "label": {
+    "text": "Sort by"
+  },
+  "items": [
+    {
+      "value": 1,
+      "text": "Modified date (newest first)",
+      "selected": true
+    },
+    {
+      "value": 2,
+      "text": "Modified date (oldest first)"
+    },
+    {
+      "value": 3,
+      "text": "Published date (newest first)"
+    },
+    {
+      "value": 4,
+      "text": "Published date (oldest first)"
+    },
+    {
+      "value": 5,
+      "text": "Title (A-Z)"
+    },
+    {
+      "value": 6,
+      "text": "Title (Z-A)"
+    }
+  ]
+}) }}

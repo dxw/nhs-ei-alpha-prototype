@@ -8,7 +8,7 @@
 
 {% block header %}
 
-{% include "v2/partials-v2/header-v2.html" %}
+{% include "partials/header.html" %}
 
 {% endblock %}
 
@@ -56,9 +56,9 @@
             <!-- Form starts -->
             <div class="nhsuk-form-group">
 
-              {% include "v1/filter-content-type.html" %}
-              {% include "v1/filter-resource-type.html" %}
-              {% include "v1/filter-topics.html" %}
+              {% include "partials/filters/filter-content-type.html" %}
+              {% include "partials/filters/filter-resource-type.html" %}
+              {% include "partials/filters/filter-topics.html" %}
               <br>
               {{ button({
                 "text": "Filter results",
@@ -76,14 +76,14 @@
           Found <b>5,618</b> matching results.
         </p>
 
-        {% include "v1/filter-sort-by.html" %}
+        {% include "partials/filters/filter-sort-by.html" %}
         <!-- Results block -->
         <ul class="nhsuk-list nhsuk-list--border" start="1">
           <!-- Best bets -->
           <!-- Results -->
           <li class="nhsie-search-result-item">
             <h2 class="nhsuk-u-margin-bottom-1 nhsuk-heading-s">
-              <a href="/v1/content-page" class="app-search-results-item">Headline <strong>matching word</strong> title</a>
+              <a href="/content-page" class="app-search-results-item">Headline <strong>matching word</strong> title</a>
             </h2>
             <p class="nhsuk-body-s nhsuk-u-margin-top-1">
               Urgent advice: Go to A&amp;E after a <strong>matching word</strong> injury if you or your child have:. ... Immediate action required: Call 999 if someone has hit their <strong>head</strong> and has:.
@@ -97,7 +97,7 @@
           </li>
           <li class="nhsie-search-result-item">
             <h2 class="nhsuk-u-margin-bottom-1 nhsuk-heading-s">
-              <a href="/v1/content-page" class="app-search-results-item">Headline <strong>matching word</strong> title</a>
+              <a href="/content-page" class="app-search-results-item">Headline <strong>matching word</strong> title</a>
             </h2>
             <p class="nhsuk-body-s nhsuk-u-margin-top-1">
               Urgent advice: Go to A&amp;E after a <strong>matching word</strong> injury if you or your child have:. ... Immediate action required: Call 999 if someone has hit their <strong>head</strong> and has:.
@@ -111,21 +111,21 @@
           </li>
           <li class="nhsie-search-result-item">
             <h2 class="nhsuk-u-margin-bottom-1 nhsuk-heading-s">
-              <a href="/v1/content-page" class="app-search-results-item">Headline <strong>matching word</strong> title</a>
+              <a href="/content-page" class="app-search-results-item">Headline <strong>matching word</strong> title</a>
             </h2>
             <p class="nhsuk-body-s nhsuk-u-margin-top-1">
               Urgent advice: Go to A&amp;E after a <strong>matching word</strong> injury if you or your child have:. ... Immediate action required: Call 999 if someone has hit their <strong>head</strong> and has:.
             </p>
             <p class="nhsuk-body-s">
               <b>Published: </b> 1st January 2020 - <em>Latest version</em><br>
-              <span class="nhsie-result-meta"><b>Content type: </b><a href="/v1/content-page">Case study</a></span>
+              <span class="nhsie-result-meta"><b>Content type: </b><a href="/content-page">Case study</a></span>
               <span class="nhsie-result-meta"></span>
               <b>Main topic: </b><a href="#">Cancer</a>
             </p>
           </li>
           <li class="nhsie-search-result-item">
             <h2 class="nhsuk-u-margin-bottom-1 nhsuk-heading-s">
-              <a href="/v1/content-page" class="app-search-results-item">Headline <strong>matching word</strong> title</a>
+              <a href="/content-page" class="app-search-results-item">Headline <strong>matching word</strong> title</a>
             </h2>
             <p class="nhsuk-body-s nhsuk-u-margin-top-1">
               Urgent advice: Go to A&amp;E after a <strong>matching word</strong> injury if you or your child have:. ... Immediate action required: Call 999 if someone has hit their <strong>head</strong> and has:.
@@ -139,7 +139,7 @@
           </li>
           <li class="nhsie-search-result-item">
             <h2 class="nhsuk-u-margin-bottom-1 nhsuk-heading-s">
-              <a href="/v1/content-page" class="app-search-results-item">Headline <strong>matching word</strong> title</a>
+              <a href="/content-page" class="app-search-results-item">Headline <strong>matching word</strong> title</a>
             </h2>
             <p class="nhsuk-body-s nhsuk-u-margin-top-1">
               Urgent advice: Go to A&amp;E after a <strong>matching word</strong> injury if you or your child have:. ... Immediate action required: Call 999 if someone has hit their <strong>head</strong> and has:.
