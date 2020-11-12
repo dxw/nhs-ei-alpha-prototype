@@ -39,33 +39,35 @@
 <!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 
 {% block content %}
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
+<article class="article">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
 
-      <!-- Change the page title here -->
-      <h1>
-      Headline displayed at the top of page using sentence case
-      </h1>
+        <!-- Change the page title here -->
+        <h1>
+        Headline displayed at the top of page using sentence case
+        </h1>
 
-      <!-- Add your content here -->
-      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+        <!-- Add your content here -->
+        <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
 
-      <p class="nhsuk-lede-text">
-        Supporting subheadline text directly underneath headline
-      </p>
+        <p class="nhsuk-lede-text">
+          Supporting subheadline text directly underneath headline
+        </p>
 
-      <p class="nhsuk-body-s">
-        <strong>Published: </strong> 1st January 2020<br>
-        <strong>Last updated: </strong> 20th January 2020<br>
-        <strong>By: </strong> Dr. John Smith
-      </p>
+        <p class="nhsuk-body-s">
+          <strong>Published: </strong> 1st January 2020<br>
+          <strong>Last updated: </strong> 20th January 2020<br>
+          <strong>By: </strong> Dr. John Smith
+        </p>
 
-      <p class="nhsuk-body-s">
-        <strong>Publication type: </strong> <a href="#">Guidance</a> <br>
-        <strong>Topic: </strong> <a href="#">General practice</a>
-      </p>
+        <p class="nhsuk-body-s">
+          <strong>Publication type: </strong> <a href="#">Guidance</a> <br>
+          <strong>Topic: </strong> <a href="#">General practice</a>
+        </p>
+      </div>
     </div>
-  </div>
 
 
   <div class="nhsuk-grid-row nhsuk-u-padding-top-5">
@@ -164,6 +166,8 @@
       <p class="nhsuk-body"><a href="#">Is there anything wrong with this page?</a></p>
     </div>
   </div>
+  </div>
+</article>
 
   <!-- End of content -->
 {% endblock %}
