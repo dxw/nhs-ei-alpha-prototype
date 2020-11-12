@@ -1,0 +1,185 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+{% from 'images/macro.njk' import image %}
+
+{% block pageTitle %}
+  NHS England and Improvement - Get involved
+{% endblock %}
+
+{% block header %}
+
+{% include "partials/header.html" %}
+
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+
+{{ breadcrumb({
+  items: [
+    {
+      href: "/home",
+      text: "Home"
+    }
+  ],
+  href: "/get-involved",
+  text: "Get involved"
+}) }}
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+
+{% block content %}
+
+<!-- <div class="nhsuk-global-alert" id="nhsuk-global-alert" role="complementary">
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+<div class="nhsuk-global-alert__content">
+<div class="nhsuk-global-alert__message"><h2 class="nhsuk-heading-m">Coronavirus (COVID-19)</h2>
+<p><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">Our advice for clinicians on the coronavirus is here.</a></p>
+<p>If you are a member of the public looking for health advice, go to the <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">NHS website</a>. And if you are looking for the latest travel information, and advice about the government response to the outbreak, go to the <a href="https://www.gov.uk/guidance/wuhan-novel-coronavirus-information-for-the-public">gov.uk website</a>.</p>
+</div>
+</div></div></div></div> -->
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+  <section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description" style="background-image: url('https://www.england.nhs.uk/wp-content/uploads/2016/02/get-involved-people-signs_TB_3_1400x520.jpg');">
+    <div class="nhsuk-hero__overlay">
+      <div class="nhsuk-width-container-fluid">
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <div class="nhsuk-hero-content">
+              <h1 class="nhsuk-u-margin-bottom-3">Get Involved</h1>
+              <p class="nhsuk-body-l nhsuk-u-margin-bottom-0">People and communities are important to us because they help us improve all aspects of health care, including patient safety, patient experience and health outcomes – giving people the power to live healthier lives.</p>
+              <!-- <span class="nhsuk-hero__arrow" aria-hidden="true"></span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <section>
+    <div class="nhsuk-width-container-fluid nhsuk-u-margin-top-8">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-third">
+          <h2 class="nhsuk-heading-m">
+            <a href="#">
+              About the Involvement Hub
+            </a>
+          </h2>
+          <p class="nhsuk-body">
+            A source of information for people who want to get involved in our work or enable others to participate.
+          </p>
+        </div>
+        <div class="nhsuk-grid-column-one-third">
+          <h2 class="nhsuk-heading-m">
+            <a href="#">
+              Information for commissioners
+            </a>
+          </h2>
+          <p class="nhsuk-body">
+            Statutory guidance for Clinical Commissioning Groups on involving patients and the public.
+          </p>
+        </div>
+        <div class="nhsuk-grid-column-one-third">
+          <h2 class="nhsuk-heading-m">
+            <a href="#">
+              Surveys and consultations
+            </a>
+          </h2>
+          <p class="nhsuk-body">
+            Have your say on our current consultations and surveys.
+          </p>
+        </div>
+      </div>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-third">
+          <h2 class="nhsuk-heading-m">
+            <a href="#">
+              Learning and development
+            </a>
+          </h2>
+          <p class="nhsuk-body">
+Workshops, webinars and elearning to improve understanding of the healthcare sector and participation.           </p>
+        </div>
+        <div class="nhsuk-grid-column-one-third">
+          <h2 class="nhsuk-heading-m">
+            <a href="#">
+Good practice and case studies            </a>
+          </h2>
+          <p class="nhsuk-body">
+Examples of good practice in involving people in healthcare services and service development.          </p>
+        </div>
+        <div class="nhsuk-grid-column-one-third">
+          <h2 class="nhsuk-heading-m">
+            <a href="#">
+Resources and bite sized guides            </a>
+          </h2>
+          <p class="nhsuk-body">
+A variety of resources to support you in your involvement work, including bitesize guides to participation.          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="nhsuk-width-container-fluid nhsuk-u-margin-top-8">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-third">
+          <h2 class="nhsuk-heading-m">
+            <a href="#">
+            How to get involved
+            </a>
+          </h2>
+        </div>
+        <div class="nhsuk-grid-column-one-third">
+          <h2 class="nhsuk-heading-m">
+            <a href="#">
+            Why get involved
+            </a>
+          </h2>
+        </div>
+        <div class="nhsuk-grid-column-one-third">
+          <h2 class="nhsuk-heading-m">
+            <a href="#">
+            Current opportunities
+            </a>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+<aside class="">
+  <div class="nhsuk-width-container-fluid nhsuk-u-margin-top-8">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <h2 class="nhsuk-heading-m">You may also be interested in</h2>
+        <h3 class="nhsuk-heading-s"><a href="">
+          An introduction to the NHS
+        </a></h3>
+      </div>
+    </div>
+  </div>
+</aside>
+<aside class="">
+  <div class="nhsuk-width-container-fluid nhsuk-u-margin-top-8">
+
+    <h2>Latest get involved blog post</h2>
+    <h3><a href="">Listening to staff and patients: it’s not just a numbers game</a></h3>
+    <a href="#">Read all posts</a>
+
+    <h2>Latest get involved news</h2>
+    <h3><a href="#">NHS launches plan to improve patient care by cutting long hospital stays</a></h3>
+    <a href="#">Read all news</a>
+  </div>
+</aside>
+
+
+
+  <!-- End of content -->
+{% endblock %}
