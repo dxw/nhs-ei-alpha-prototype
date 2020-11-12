@@ -112,3 +112,9 @@
   background-color: $color_nhsuk-pale-yellow;
   padding: 1em 1em 0.5em 1em;
 }
+
+main {
+  &.main-hero {
+    padding-top: 0;
+  }
+}
