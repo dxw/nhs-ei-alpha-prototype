@@ -33,7 +33,7 @@ module.exports = {
     },
     {
       name: "Patient involvement",
-      url: "#"
+      url: "/get-involved"
     },
     {
       name: "System guidance and processes",
