@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends 'layout-hero.html' %}
 {% from 'images/macro.njk' import image %}
 
 {% block pageTitle %}
@@ -33,22 +33,12 @@
 
 {% block content %}
 
-<!-- <div class="nhsuk-global-alert" id="nhsuk-global-alert" role="complementary">
-<div class="nhsuk-grid-row">
-<div class="nhsuk-grid-column-full">
-<div class="nhsuk-global-alert__content">
-<div class="nhsuk-global-alert__message"><h2 class="nhsuk-heading-m">Coronavirus (COVID-19)</h2>
-<p><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">Our advice for clinicians on the coronavirus is here.</a></p>
-<p>If you are a member of the public looking for health advice, go to the <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">NHS website</a>. And if you are looking for the latest travel information, and advice about the government response to the outbreak, go to the <a href="https://www.gov.uk/guidance/wuhan-novel-coronavirus-information-for-the-public">gov.uk website</a>.</p>
-</div>
-</div></div></div></div> -->
-
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
-
-  <section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description" style="background-image: url('https://www.england.nhs.uk/wp-content/uploads/2016/02/get-involved-people-signs_TB_3_1400x520.jpg');">
+<article class="article">
+  <section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description" style="background-image: url('images/get-involved-people-signs.jpg');">
     <div class="nhsuk-hero__overlay">
-      <div class="nhsuk-width-container-fluid">
+      <div class="nhsuk-width-container">
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-two-thirds">
             <div class="nhsuk-hero-content">
@@ -65,7 +55,7 @@
   <br>
   <br>
   <section>
-    <div class="nhsuk-width-container-fluid nhsuk-u-margin-top-8">
+    <div class="nhsuk-width-container nhsuk-u-margin-top-8">
       <div class="nhsuk-grid-row">
         <div class="nhsuk-grid-column-one-third">
           <h2 class="nhsuk-heading-m">
@@ -128,7 +118,7 @@ A variety of resources to support you in your involvement work, including bitesi
     </div>
   </section>
   <section>
-    <div class="nhsuk-width-container-fluid nhsuk-u-margin-top-8">
+    <div class="nhsuk-width-container nhsuk-u-margin-top-8">
       <div class="nhsuk-grid-row">
         <div class="nhsuk-grid-column-one-third">
           <h2 class="nhsuk-heading-m">
@@ -155,7 +145,7 @@ A variety of resources to support you in your involvement work, including bitesi
     </div>
   </section>
 <aside class="">
-  <div class="nhsuk-width-container-fluid nhsuk-u-margin-top-8">
+  <div class="nhsuk-width-container nhsuk-u-margin-top-8">
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-full">
         <h2 class="nhsuk-heading-m">You may also be interested in</h2>
@@ -167,7 +157,7 @@ A variety of resources to support you in your involvement work, including bitesi
   </div>
 </aside>
 <aside class="">
-  <div class="nhsuk-width-container-fluid nhsuk-u-margin-top-8">
+  <div class="nhsuk-width-container nhsuk-u-margin-top-8">
 
     <h2>Latest get involved blog post</h2>
     <h3><a href="">Listening to staff and patients: it’s not just a numbers game</a></h3>
@@ -178,7 +168,7 @@ A variety of resources to support you in your involvement work, including bitesi
     <a href="#">Read all news</a>
   </div>
 </aside>
-
+</article>
 
 
   <!-- End of content -->
