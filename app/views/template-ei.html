@@ -88,10 +88,10 @@
         {{ header({}) }}
       {% endblock %}
 
+      {% include "partials/global-alert.html" %}
+
       {% block beforeContent %}
-        <!-- Global alert -->
-        <!-- Breadcrumbs -->
-        <!-- Phase banner -->
+
       {% endblock %}
 
       {% block main %}
@@ -99,6 +99,9 @@
           <main class="nhsuk-main-wrapper {{ mainClasses }}" id="maincontent" role="main">
             {% block content %}{% endblock %}
           </main>
+          <aside>
+            {% include "partials/signpost-callout.html" %}
+          </aside>
         </div>
       {% endblock %}
 
