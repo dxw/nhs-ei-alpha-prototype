@@ -5,13 +5,14 @@
 .app-phase-banner__container {
   border-bottom: 1px solid $nhsuk-border-color;
   padding: nhsuk-spacing(2) 0;
+  margin-bottom: nhsuk-spacing(2);
 }
 
 .app-phase-banner__content {
   display: table;
   margin-bottom: 0;
 
-  .app-phase-banner__tag {
+  .app-phase-banner__content__tag {
     display: block;
     margin-right: nhsuk-spacing(2);
   }
