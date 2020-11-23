@@ -15,6 +15,9 @@
 @import 'components/nav-v1';
 @import 'components/alert';
 
+@import 'components/block-link';
+@import 'components/icon';
+
 @import 'nhsuk/nhsuk';
 
 
@@ -118,3 +121,31 @@ main {
     padding-top: 0;
   }
 }
+
+
+.list--reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cta-list::after, .hub-box-list::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.type-span--asset {
+    background-color: rgba(255,0,0,.1);
+}
+.type-span {
+    display: none;
+    position: relative;
+    width: 0;
+    height: 0;
+    padding: 4px 6px;
+    font-size: 9px;
+    line-height: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }

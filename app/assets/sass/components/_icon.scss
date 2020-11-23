@@ -1,0 +1,105 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 22px;
+  margin: 5px;
+  line-height: 1;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url(../icons/download/generic_download.svg);
+  background-size: 18px 22px;
+}
+
+.icon--2x {
+  width: 36px;
+  height: 44px;
+  background-size: 36px 44px;
+}
+
+.icon--3x {
+  width: 54px;
+  height: 66px;
+  background-size: 54px 66px;
+}
+
+.icon--download {
+  width: 50px;
+  height: 54px;
+  background-size: 50px 54px;
+}
+
+.icon-size:after {
+  content: "(18px x 22px)";
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.icon-size--2x:after {
+  content: "(36px x 44px)";
+}
+
+.icon-size--3x:after {
+  content: "(54px x 66px)";
+}
+
+.icon-size--download:after {
+  content: "(50px x 54px)";
+}
+
+.icon--pdf {
+  background-image: url(../icons/download/pdf_download.svg);
+}
+
+.icon--doc, .icon--docm, .icon--docx, .icon--odt, .icon--rtf, .icon--word {
+  background-image: url(../icons/download/document_download.svg);
+}
+
+.icon--odp, .icon--otp, .icon--ppsx, .icon--ppt, .icon--pptm, .icon--pptx {
+  background-image: url(../icons/download/powerpoint_download.svg);
+}
+
+.icon--jar, .icon--rar, .icon--zip {
+  background-image: url(../icons/download/zip_download.svg);
+}
+
+.icon--mov, .icon--mp4, .icon--ogg, .icon--video {
+  background-image: url(../icons/download/video_download.svg);
+}
+
+.icon--spreadsheet, .icon--xls, .icon--xlsm, .icon--xlsx, .icon--xltm, .icon--xltx {
+  background-image: url(../icons/download/excel_download.svg);
+}
+
+.icon--csv {
+  background-image: url(../icons/download/csv_download.svg);
+}
+
+.icon--text, .icon--txt {
+  background-image: url(../icons/download/text_download.svg);
+}
+
+.icon--html, .icon--xhtml {
+  background-image: url(../icons/download/web.svg);
+}
+
+.icon--gif, .icon--image, .icon--jpg, .icon--png, .icon--svg {
+  background-image: url(../icons/download/image_download.svg);
+}
+
+.icon--jar {
+  background-image: url(../icons/download/jar_code_download.svg);
+}
+
+.icon--json {
+  background-image: url(../icons/download/json_code_download.svg);
+}
+
+.icon--war {
+  background-image: url(../icons/download/war_code_download.svg);
+}
+
+.icon--xml {
+  background-image: url(../icons/download/xml_code_download.svg);
+}
