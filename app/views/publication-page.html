@@ -1,0 +1,158 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+{% from 'images/macro.njk' import image %}
+
+{% block pageTitle %}
+  NHS England and Improvement - Content page
+{% endblock %}
+
+{% block header %}
+
+{% include "partials/header.html" %}
+
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/home",
+      text: "Home"
+    },
+    {
+      href: "#",
+      text: "Publications"
+    },
+    {
+      href: "#",
+      text: "Guidance"
+    }
+  ],
+  href: "#",
+  text: "General practice"
+}) }}
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+
+{% block content %}
+<article class="article">
+  <div class="nhsuk-width-container">
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- Change the page title here -->
+    <h1>
+      Data Protection Impact Assessment: National Immunisation, Vaccination System (NIVS)
+    </h1>
+
+    <!-- Add your content here -->
+    <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+    <!-- Introduction -->
+    <p class="nhsuk-lede-text">
+      This is the Data Protection Impact Assessment (DPIA), including System Level Security Policy and Access Control Policy, completed and signed off by NHS England and NHS Improvement, <a href="https://www.england.nhs.uk/increasing-health-and-social-care-worker-flu-vaccinations/niv-faqs/">for the National Immunisation, Vaccination System (NIVS)</a>.
+    </p>
+
+    <p class="nhsuk-body-s">
+      <strong>Published: </strong> 1st January 2020<br>
+      <strong>Last updated: </strong> 20th January 2020<br>
+      <strong>By: </strong> Dr. John Smith
+    </p>
+
+    <p class="nhsuk-body-s">
+      <strong>Publication type: </strong> <a href="#">Guidance</a> <br>
+      <strong>Topic: </strong> <a href="#">General practice</a>
+    </p>
+
+    <ul class="list list--reset cta-list cta-list--sections">
+       <li>
+          <span class="type-span type-span--asset type-span--hidden" data-type="asset">asset</span>
+          <a href="#" class="block-link">
+             <div class="block-link__header">
+                <span class="icon icon--pdf icon--download" aria-hidden="true"></span>
+             </div>
+             <div class="block-link__body">
+                <span class="block-link__title">Example file - NHS Digital sustainability posters</span>
+                <meta itemprop="encodingFormat" content="application/pdf">
+                <span class="block-link__meta regular">[pdf, <span class="fileSize">size: <span itemprop="contentSize">126.7 kB</span></span>, <span class="pageNumber">11</span> pages]</span>
+             </div>
+          </a>
+       </li>
+       <li>
+          <span class="type-span type-span--external type-span--hidden" data-type="external">external</span>
+          <a href="https://www.nhs.uk/" class="block-link">
+             <div class="block-link__header">
+                <span class="icon icon--html icon--download" aria-hidden="true"></span>
+             </div>
+             <div class="block-link__body">
+                <span class="block-link__title">Example external link - NHS UK</span>
+                <p class="cta__text">External links must include a description, like this:
+                   The NHS UK website includes information about NHS services.
+                </p>
+             </div>
+          </a>
+       </li>
+       <li>
+          <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
+          <a href="#" class="block-link">
+             <div class="block-link__header">
+                <span class="icon icon--html icon--download" aria-hidden="true"></span>
+             </div>
+             <div class="block-link__body">
+                <span class="block-link__title">Downloads</span>
+                <p class="cta__text">The downloads feature allows links and files to be visually separated from other content on a web page, as clickable areas.</p>
+             </div>
+          </a>
+       </li>
+       <li>
+        <span class="type-span type-span--asset type-span--hidden" data-type="asset">asset</span>
+
+          <a href="#" class="block-link">
+              <div class="block-link__header">
+                <span class="icon icon--doc icon--download" aria-hidden="true"></span>
+              </div>
+              <div class="block-link__body">
+                <span class="block-link__title">Anti-fraud, bribery and corruption policy</span>
+<meta itemprop="encodingFormat" content="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+<span class="block-link__meta regular">[docx, <span class="fileSize">size: <span itemprop="contentSize">192.2 kB</span></span>]</span>
+              </div>
+            </a>
+       </li>
+       <li>
+          <span class="type-span type-span--asset type-span--hidden" data-type="asset">asset</span>
+          <a href="#" class="block-link">
+             <div class="block-link__header">
+                <span class="icon icon--pdf icon--download" aria-hidden="true"></span>
+             </div>
+             <div class="block-link__body">
+                <span class="block-link__title">Example file - NHS Digital sustainability posters</span>
+                <meta itemprop="encodingFormat" content="application/pdf">
+                <span class="block-link__meta regular">[pdf, <span class="fileSize">size: <span itemprop="contentSize">126.7 kB</span></span>, <span class="pageNumber">11</span> pages]</span>
+             </div>
+          </a>
+          <details class="nhsuk-details">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">Request an  accessible format.</span>
+            </summary>
+            <div class="nhsuk-details__text">
+              <p>
+                If you use assistive technology (such as a screen reader) and need a version of this document in a more accessible format, please email <a href="mailto:">corpcomms@england.nhs.uk</a>.
+                Please tell us what format you need. It will help us if you say what assistive technology you use.
+              </p>
+            </div>
+          </details>
+       </li>
+    </ul>
+
+
+  </div>
+</div>
+</div>
+
+</article>
+
+  <!-- End of content -->
+{% endblock %}
