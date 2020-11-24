@@ -95,14 +95,14 @@
       {% endblock %}
 
       {% block main %}
-        <div class="nhsuk-width-container nhsuk-width-container--full">
-          <main class="nhsuk-main-wrapper {{ mainClasses }}" id="maincontent" role="main">
-            {% block content %}{% endblock %}
-          </main>
-          <aside>
-            {% include "partials/signpost-callout.html" %}
-          </aside>
-        </div>
+
+      <main class="nhsuk-main-wrapper {{ mainClasses }}" id="maincontent" role="main">
+        {% block content %}{% endblock %}
+      </main>
+      <aside>
+        {% include "partials/signpost-callout.html" %}
+      </aside>
+
       {% endblock %}
 
       {% block footer %}
