@@ -52,40 +52,6 @@ module.exports = {
       url: "#"
     }
   ],
-  guidance: [
-    {
-      title: "Dementia wellbeing in the COVID-19 pandemic",
-      url: "Dementia wellbeing in the COVID-19 pandemic",
-      date: "25 September 2020"
-    },
-    {
-      title: "NRLS national patient safety incident reports: commentary (September 2020)",
-      url: "https://www.england.nhs.uk/publication/nrls-national-patient-safety-incident-reports-commentary-september-2020/",
-      date: "23 September 2020"
-    },
-    {
-      title: "Pharmacy Quality Scheme Guidance 2020/21 (Part 2)",
-      url: "https://www.england.nhs.uk/publication/pharmacy-quality-scheme-guidance-2020-21/",
-      date: "21 September 2020"
-    }
-  ],
-  policy: [
-    {
-      title: "Rituximab and eculizumab for the prevention and management of delayed haemolytic transfusion reactions and hyperhaemolysis in patients with haemoglobinopathies",
-      url: "https://www.england.nhs.uk/publication/rituximab-and-eculizumab-for-the-prevention-and-management-of-delayed-haemolytic-transfusion-reactions-and-hyperhaemolysis-in-patients-with-haemoglobinopathies/",
-      date: "24 September 2020"
-    },
-    {
-      title: "Plerixafor for stem cell mobilisation in adults and children",
-      url: "https://www.england.nhs.uk/publication/plerixafor-for-stem-cell-mobilisation-in-adults-and-children/",
-      date: "24 September 2020"
-    },
-    {
-      title: "Clinical Commissioning Urgent Policy Statement: Cystic fibrosis modulator therapies access agreement for licensed mutations",
-      url: "https://www.england.nhs.uk/publication/clinical-commissioning-urgent-policy-statement-cystic-fibrosis-modulator-therapies-access-agreement-for-licensed-mutations/",
-      date: "21 August 2020"
-    }
-  ],
   news_one: [
     {
       title: "NHS to introduce ‘one stop shops’ in the community for life saving checks",
@@ -96,7 +62,13 @@ module.exports = {
       title: "NHS becomes the world’s first national health system to commit to become ‘carbon net zero’, backed by clear deliverables and milestones",
       url: "https://www.england.nhs.uk/2020/10/nhs-becomes-the-worlds-national-health-system-to-commit-to-become-carbon-net-zero-backed-by-clear-deliverables-and-milestones/",
       date: "1 October 2020"
-    }],
+    },
+    {
+      title: "Nursing boost for England’s NHS",
+      url: "https://www.england.nhs.uk/2020/09/nursing-boost-for-englands-nhs/",
+      date: "21 September 2020"
+    }
+  ],
   news_two: [
     {
       title: "Prime time telly boost for NHS jobs",
@@ -107,7 +79,13 @@ module.exports = {
       title: "Surge in people checking their risk of type 2 diabetes",
       url: "https://www.england.nhs.uk/2020/09/surge-in-people-checking-their-risk-of-type-2-diabetes/",
       date: "28 September 2020"
-    }],
+    },
+    {
+      title: "NHS announces independent review into gender identity services for children and young people",
+      url: "https://www.england.nhs.uk/2020/09/nhs-announces-independent-review-into-gender-identity-services-for-children-and-young-people/",
+      date: "22 September 2020"
+    }
+  ],
   news_three: [
   {
     title: "NHS announces independent review into gender identity services for children and young people",
@@ -119,6 +97,64 @@ module.exports = {
     url: "https://www.england.nhs.uk/2020/09/nursing-boost-for-englands-nhs/",
     date: "21 September 2020"
   }],
+  publication_one: [
+    {
+      title: "Data Protection Impact Assessment: National Immunisation, Vaccination System (NIVS)",
+      url: "#",
+      date: "17 November 2020",
+      verb: "Published",
+      pubType: "Guidance",
+      docType: "PDF",
+      labelClass: "orange"
+    },
+    {
+      title: "COVID-19 therapy: corticosteroids including dexamethasone and hydrocortisone",
+      url: "#",
+      date: "13 November 2020",
+      verb: "Updated",
+      pubType: "Letter",
+      docType: "PDF",
+      labelClass: "blue"
+    },
+    {
+      title: "Case study: St. George’s University Hospitals NHS Foundation Trust: Occupational health and wellbeing",
+      url: "#",
+      date: "13 November 2020",
+      verb: "Published",
+      pubType: "Case study",
+      docType: "HTML",
+      labelClass: "green"
+    }
+  ],
+  publication_two: [
+    {
+      title: "Primary Medical Care Policy and Guidance Manual – Annex B: sub contracting of clinical services under GMS contracts",
+      url: "#",
+      date: "12 November 2020",
+      verb: "Published",
+      pubType: "Guidance",
+      docType: "PDF",
+      labelClass: "orange"
+    },
+    {
+      title: "Primary Medical Care Policy and Guidance Manual – Annex A: sub contracting of clinical services under GMS contracts",
+      url: "#",
+      date: "12 November 2020",
+      verb: "Published",
+      pubType: "Guidance",
+      docType: "PDF",
+      labelClass: "orange"
+    },
+    {
+      title: "Primary Medical Care Policy and Guidance Manual – Annex 17: novation agreement",
+      url: "#",
+      date: "12 November 2020",
+      verb: "Published",
+      pubType: "Template",
+      docType: "PDF",
+      labelClass: "pink"
+    }
+  ],
   our_priorities: [
     {
       title: "Cancer",

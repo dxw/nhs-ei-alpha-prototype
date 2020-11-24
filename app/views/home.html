@@ -27,148 +27,141 @@
 
 {% block content %}
 
-
 <div class="nhsuk-width-container">
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-full">
 
       <!-- Change the page title here -->
-      <h1 class="nhsuk-visually-hidden">
+      <h1 class="nhsuk-u-visually-hidden">
         NHS England and Improvement Homepage
       </h1>
 
     </div>
   </div>
+</div>
 
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
-
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-      <h2 class="nhsuk-heading-l">Latest in guidance and policy</h2>
-      <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-one-half">
-          <h3 class="nhsuk-heading-m list-title">Guidance</h3>
-          <ol class="nhsuk-list">
-          {% for item in data.guidance %}
+<section class="news-section">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <h2 class="nhsuk-heading-l">Latest news</h2>
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-one-half">
+            <ol class="nhsuk-list list-left">
+            {% for item in data.news_one %}
               <li>
                 <article class="">
-                  <h2 class="nhsuk-heading-xs title">
+                  <h2 class="nhsuk-heading-xs nhsei-list-title">
                     <a href="{{ item['url'] }}">
                     {{ item['title'] }}</a>
                   </h2>
+                  <span class="nhsei-list-meta">Published on
+                  <time class="date" datetime="">{{ item["date"] }}</time></span>
                 </article>
-                <span class="nhsuk-tag-guidance">Published on</span>
-                <time class="date" datetime="">{{ item["date"] }}</time>
               </li>
-            {% endfor %}
+              {% endfor %}
+            </ol>
+          </div>
 
-            <li><a href="https://www.england.nhs.uk/publication/?filter-keyword=&filter-category=&filter-publication=guidance&filter-date-from=&filter-date-to=&filter-order-by=date-desc">View all guidance</a></li>
-          </ol>
-        </div>
-
-        <div class="nhsuk-grid-column-one-half">
-          <h3 class="nhsuk-heading-m list-title">Policy</h3>
-          <ol class="nhsuk-list">
-          {% for item in data.policy %}
+          <div class="nhsuk-grid-column-one-half">
+            <ol class="nhsuk-list list-center">
+            {% for item in data.news_two %}
               <li>
                 <article class="">
-                  <h2 class="nhsuk-heading-xs title">
+                  <h2 class="nhsuk-heading-xs nhsei-list-title">
                     <a href="{{ item['url'] }}">
                     {{ item['title'] }}</a>
                   </h2>
+                  <span class="nhsei-list-meta">Published on
+                  <time class="date" datetime="">{{ item["date"] }}</time></span>
                 </article>
-                <span class="nhsuk-tag-guidance">Published on</span>
-                <time class="date" datetime="">{{ item["date"] }}</time>
               </li>
             {% endfor %}
-
-            <li><a href="https://www.england.nhs.uk/publication/?filter-keyword=&filter-category=&filter-publication=policy-or-strategy&filter-date-from=&filter-date-to=&filter-order-by=date-desc">View all policy</a></li>
-          </ol>
+            </ol>
+          </div>
         </div>
 
+        <a href="https://www.england.nhs.uk/news/">View all news</a>
       </div>
     </div>
-  </div> <!--.end  -->
+  </div>
+</section>
 
-  <div class="news-section nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-      <h2 class="nhsuk-heading-l">Latest news</h2>
-      <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-one-third">
-          <ol class="nhsuk-list list-left">
-          {% for item in data.news_one %}
-            <li>
-              <article class="">
-                <h2 class="nhsuk-heading-xs title">
-                  <a href="{{ item['url'] }}">
-                  {{ item['title'] }}</a>
-                </h2>
-              </article>
-              <time class="date" datetime="">{{ item["date"] }}</time>
-            </li>
-            {% endfor %}
-          </ol>
-        </div>
-
-        <div class="nhsuk-grid-column-one-third">
-          <ol class="nhsuk-list list-center">
-          {% for item in data.news_two %}
-            <li>
-              <article class="">
-                <h2 class="nhsuk-heading-xs title">
-                  <a href="{{ item['url'] }}">
-                  {{ item['title'] }}</a>
-                </h2>
-              </article>
-              <time class="date" datetime="">{{ item["date"] }}</time>
-            </li>
-          {% endfor %}
-          </ol>
-        </div>
-
-        <div class="nhsuk-grid-column-one-third">
-          <ol class="nhsuk-list list-right">
-          {% for item in data.news_three %}
-            <li>
-              <article class="">
-                <h2 class="nhsuk-heading-xs title">
-                  <a href="{{ item['url'] }}">
-                  {{ item['title'] }}</a>
-                </h2>
-              </article>
-              <time class="date" datetime="">{{ item["date"] }}</time>
-            </li>
-          {% endfor %}
-          <ol/>
-        </div>
+<article class="featured-section">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <h2 class="nhsuk-u-visually-hidden">Highlights</h2>
       </div>
 
-      <a href="https://www.england.nhs.uk/news/">View all news</a>
+      <div class="nhsuk-grid-column-one-half">
+
+        <h3 class="nhsuk-heading-l"><a href="https://www.england.nhs.uk/ournhspeople/">We are the NHS: People Plan for 2020/21</a></h3>
+        <p class="nhsuk-body">Our NHS is made up of 1.3 million people who care for the people of this country with skill, compassion and dedication. This plan sets out what the people of the NHS can expect – from their leaders and from each other – for the rest of 2020 and into 2021.</p>
+        <p class="nhsuk-body">It sets out actions to support transformation across the whole NHS.  It focuses on how we must all continue to look after each other and  foster a culture of inclusion and belonging, as well as action to grow  our workforce, train our people, and work together differently to  deliver patient care.<p>
+      </div>
+      <div class="nhsuk-grid-column-one-half">
+        {{ image({
+          "src": "../images/home-featured.jpg",
+          "alt": "Featured image"
+        }) }}
+      </div>
     </div>
   </div>
+</article>
 
+<section class="latest-publications-section">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <h2 class="nhsuk-heading-l">Latest in publications</h2>
+        <p>The most recently added documents to the publications library</p>
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-one-half">
+            <ol class="nhsuk-list">
+            {% for item in data.publication_one %}
+                <li>
+                  <article class="">
+                    <h2 class="nhsuk-heading-xs nhsei-list-title">
+                      <a href="{{ item['url'] }}">
+                      {{ item['title'] }}</a>
+                    </h2>
+                    <span class="nhsei-publication-type label-tag label-tag--{{ item["labelClass"]}}">{{ item["pubType"]}}</span>
+                    <span class="nhsei-list-meta">{{ item["verb"] }}
+                    <time class="date" datetime="">{{ item["date"] }}</time></span>
+                  </article>
+                </li>
+              {% endfor %}
+            </ol>
+          </div>
 
-  <div class="nhsuk-grid-row featured-section">
-    <div class="nhsuk-grid-column-full">
-      <h2 class="nhsuk-visually-hidden">Highlights</h2>
-    </div>
+          <div class="nhsuk-grid-column-one-half">
+            <ol class="nhsuk-list">
+              {% for item in data.publication_two %}
+                  <li>
+                    <article class="">
+                      <h2 class="nhsuk-heading-xs nhsei-list-title">
+                        <a href="{{ item['url'] }}">
+                        {{ item['title'] }}</a>
+                      </h2>
+                      <span class="nhsei-publication-type label-tag label-tag--{{ item["labelClass"]}}">{{ item["pubType"]}}</span>
+                      <span class="nhsei-list-meta">{{ item["verb"] }}
+                      <time class="date" datetime="">{{ item["date"] }}</time></span>
+                    </article>
+                  </li>
+                {% endfor %}
+            </ol>
+          </div>
 
-    <div class="nhsuk-grid-column-one-half">
-
-      <h3 class="nhsuk-heading-m"><a href="https://www.england.nhs.uk/ournhspeople/">We are the NHS: People Plan for 2020/21</a></h3>
-      <p class="nhsuk-body">Our NHS is made up of 1.3 million people who care for the people of this country with skill, compassion and dedication. This plan sets out what the people of the NHS can expect – from their leaders and from each other – for the rest of 2020 and into 2021.</p>
-      <p class="nhsuk-body">It sets out actions to support transformation across the whole NHS.  It focuses on how we must all continue to look after each other and  foster a culture of inclusion and belonging, as well as action to grow  our workforce, train our people, and work together differently to  deliver patient care.<p>
-    </div>
-    <div class="nhsuk-grid-column-one-half">
-      {{ image({
-        "src": "../images/home-featured.jpg",
-        "alt": "Featured image"
-      }) }}
+        </div>
+        <a href="#">View all publications</a>
+      </div>
     </div>
   </div>
-
+</section>
 
   <!-- End of content -->
-</div>
+
 {% endblock %}
