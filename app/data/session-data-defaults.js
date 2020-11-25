@@ -21,7 +21,7 @@ module.exports = {
   footerMenu: [
     {
       name: "About us",
-      url: "#"
+      url: "/about-us"
     },
     {
       name: "Contact us",
@@ -411,7 +411,7 @@ module.exports = {
     {
       pageTitle: "About NHS England and Improvement",
       p1: "From 1 April 2019 NHS England and NHS Improvement came together as a single organisation. We set the strategic direction for the NHS through the NHS Long Term Plan and fund key priorities for improvement.",
-      p2: " We are also responsible for overseeing NHS foundation trusts, NHS trusts and some independent providers. We support them to give patients consistently safe, high quality, and responsive care within local integrated care systems that are financially sustainable. By holding providers to account and, where necessary, intervening, we help the NHS to meet its operational goals and its longer term strategy."
+      p2: "We are also responsible for overseeing NHS foundation trusts, NHS trusts and some independent providers. We support them to give patients consistently safe, high quality, and responsive care within local integrated care systems that are financially sustainable. By holding providers to account and, where necessary, intervening, we help the NHS to meet its operational goals and its longer term strategy."
     }
   ]
 
