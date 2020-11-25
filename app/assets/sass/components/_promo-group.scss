@@ -1,0 +1,7 @@
+.nhsuk-promo-group__item .nhsuk-promo {
+  &.nhsei-promo--multi {
+    @include mq($from: desktop) {
+      margin-bottom: nhsuk-spacing(3);
+    }
+  }
+}

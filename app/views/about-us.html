@@ -1,0 +1,79 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+{% from 'images/macro.njk' import image %}
+
+{% block pageTitle %}
+  NHS England and Improvement - About us
+{% endblock %}
+
+{% block header %}
+
+{% include "partials/header.html" %}
+
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+
+{{ breadcrumb({
+  href: "/home ",
+  text: "Home"
+}) }}
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+
+{% block content %}
+
+<div class="nhsuk-width-container">
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1 class="">
+        About us
+      </h1>
+      <p>
+        From 1 April 2019 NHS England and NHS Improvement came together as a single organisation. We set the strategic direction for the NHS through the NHS Long Term Plan and fund key priorities for improvement.
+      </p>
+      <p>
+        We are also responsible for overseeing NHS foundation trusts, NHS trusts and some independent providers. We support them to give patients consistently safe, high quality, and responsive care within local integrated care systems that are financially sustainable. By holding providers to account and, where necessary, intervening, we help the NHS to meet its operational goals and its longer term strategy.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Add your content here -->
+<!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+<section>
+  <!-- introduction -->
+</section>
+<section class="nhsei-section">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+
+    {% for item in data.about_us_pages %}
+     <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+        <div class="nhsuk-promo nhsuk-promo--small nhsei-promo--multi">
+          <article>
+           <a class="nhsuk-promo__link-wrapper" href="{{ item['url'] }}">
+              <div class="nhsuk-promo__content">
+                 <h3 class="nhsuk-promo__heading">{{ item['title'] }}</h3>
+                 <p class="nhsuk-promo__description">{{ item['intro'] }}</p>
+              </div>
+           </a>
+          </article>
+        </div>
+     </div>
+     {% endfor %}
+
+
+    </div>
+  </div>
+</section>
+
+  <!-- End of content -->
+
+{% endblock %}
